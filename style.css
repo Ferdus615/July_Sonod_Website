@@ -192,10 +192,19 @@ nav a.active::after {
   transition: var(--transition);
 }
 
+.content-section p {
+  padding-bottom: .5rem;
+}
+
+.content-part {
+  margin-bottom: 2rem;
+}
+
 .dark-mode .content-section {
   background-color: var(--dark-card);
 }
 
+/* section content */
 .section-title {
   color: var(--primary-red);
   border-bottom: 3px solid var(--primary-green);
