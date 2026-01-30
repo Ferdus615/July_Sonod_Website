@@ -242,6 +242,7 @@ nav a.active::after {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top: 1.5rem;
+  width: fit-content;
 }
 
 .card {
@@ -375,11 +376,7 @@ nav a.active::after {
 
 /* About পৃষ্ঠায় হ্যাঁ/না কার্ড সেকশনের জন্য স্টাইল */
 .yes-no-explanation {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 106, 78, 0.1) 0%,
-    rgba(244, 42, 65, 0.1) 100%
-  );
+  background: transparent;
   border-radius: 10px;
   padding: 2rem;
   margin: 2rem 0;
