@@ -330,7 +330,7 @@ nav a.active::after {
   padding: 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  /* transition: max-height 0.1s ease; */
 }
 
 .dark-mode .accordion-content {
