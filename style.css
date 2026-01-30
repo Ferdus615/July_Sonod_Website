@@ -215,6 +215,15 @@ nav a.active::after {
   color: var(--primary-green);
 }
 
+.section-content {
+  display: none;
+}
+
+.section-content.active {
+  display: flex;
+  flex-direction: column;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -308,7 +317,7 @@ nav a.active::after {
   padding: 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 .dark-mode .accordion-content {
