@@ -178,7 +178,7 @@ nav a.active::after {
 }
 
 .cta-button:hover {
-  background-color: transparent;
+  background-color: var(--primary-red);
   border-color: white;
 }
 
