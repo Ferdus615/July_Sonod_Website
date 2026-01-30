@@ -37,7 +37,7 @@ mobileMenuBtn.addEventListener("click", () => {
 // Page Navigation
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     // Close mobile menu if open
     mainNav.classList.remove("active");

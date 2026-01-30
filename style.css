@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Hind Siliguri", sans-serif;
   background-color: var(--light-bg);
@@ -142,7 +146,7 @@ nav a.active::after {
 /* Hero Section */
 .hero {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    linear-gradient(rgba(0, 66, 41, 0.7), rgba(161, 24, 24, 0.7)),
     url("https://images.unsplash.com/photo-1588666309990-d68f08e3d4c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80");
   background-size: cover;
   background-position: center;
@@ -193,7 +197,7 @@ nav a.active::after {
 }
 
 .content-section p {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .content-part {
