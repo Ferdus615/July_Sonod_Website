@@ -143,6 +143,12 @@ nav a.active::after {
   cursor: pointer;
 }
 
+/* background: linear-gradient(
+    135deg,
+    var(--primary-green) 0%,
+    var(--primary-red) 100%
+  ); */
+
 /* Hero Section */
 .hero {
   background:
