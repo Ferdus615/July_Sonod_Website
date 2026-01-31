@@ -289,7 +289,7 @@ nav a.active::after {
 }
 
 .cards {
-  background-color: var(--light-bg);
+  /* background-color: var(--light-bg); */
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: var(--shadow);
@@ -432,8 +432,6 @@ nav a.active::after {
   border-radius: 10px;
   padding: 2rem;
   margin: 2rem 0;
-  /* border-left: 5px solid var(--primary-green); */
-  /* border-right: 5px solid var(--primary-red); */
 }
 
 .yes {
