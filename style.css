@@ -200,6 +200,7 @@ nav a.active::after {
 }
 
 .image-box img {
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -286,6 +287,25 @@ nav a.active::after {
   box-shadow: var(--shadow);
   transition: var(--transition);
   border-left: 4px solid var(--primary-green);
+}
+
+.cards {
+  background-color: var(--light-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border-left: 4px solid var(--primary-green);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dark-mode .card {
@@ -555,6 +575,14 @@ footer {
     font-size: 2rem;
   }
 
+  .flex-box {
+    flex-direction: column;
+  }
+
+  .image-box img {
+    width: 100%;
+  }
+
   .card-grid {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
@@ -613,6 +641,14 @@ footer {
     font-size: 1.8rem;
   }
 
+  .flex-box {
+    flex-direction: column;
+  }
+
+  .image-box img {
+    width: 100%;
+  }
+
   .footer-content {
     flex-direction: column;
   }
@@ -647,6 +683,14 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .flex-box {
+    flex-direction: column;
+  }
+
+  .image-box img {
+    width: 100%;
+  }
+
   .content-section {
     padding: 1.5rem;
   }
