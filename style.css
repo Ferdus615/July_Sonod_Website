@@ -191,7 +191,6 @@ nav a.active::after {
   display: flex;
   gap: 5rem;
   justify-content: space-around;
-  /* align-items: center; */
 }
 
 .image-box {
@@ -576,7 +575,8 @@ footer {
   }
 
   .flex-box {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
   }
 
   .image-box img {
@@ -642,7 +642,8 @@ footer {
   }
 
   .flex-box {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
   }
 
   .image-box img {
@@ -684,7 +685,8 @@ footer {
 
 @media (max-width: 576px) {
   .flex-box {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
   }
 
   .image-box img {
