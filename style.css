@@ -453,7 +453,6 @@ nav a.active::after {
 .yes-no-explanation {
   border-radius: 10px;
   padding: 2rem;
-  margin: 2rem 0;
 }
 
 .yes {
@@ -527,6 +526,100 @@ nav a.active::after {
   font-size: 0.9rem;
   opacity: 0.9;
   margin-top: 5px;
+}
+
+/* gono-vote */
+
+.vote-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.vote-header img {
+  width: 50px;
+}
+
+.question {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.proposals {
+  margin: 30px 0;
+}
+
+.proposal-item {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-green);
+}
+
+.proposal-item:nth-child(2) {
+  border-left-color: var(--primary-red);
+}
+
+.proposal-item:nth-child(3) {
+  border-left-color: var(--primary-green);
+}
+
+.proposal-item:nth-child(4) {
+  border-left-color: var(--primary-red);
+}
+
+.proposal-label {
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.proposal-text {
+  font-size: 1.05rem;
+}
+
+.response-section {
+  display: flex;
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  width: 50%;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.option-yes {
+  border-bottom: 1px solid;
+}
+
+.option-no {
+}
+
+.response-label {
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+}
+
+.response-footer {
+  margin-top: 50px;
+  font-size: small;
+  display: flex;
+  justify-content: center;
 }
 
 /* Footer */
