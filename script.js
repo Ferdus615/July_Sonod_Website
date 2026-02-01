@@ -121,6 +121,51 @@ document.querySelectorAll(".cta-button").forEach((button) => {
   });
 });
 
+// ==================== gonovote ======================
+
+document.getElementById("submitBtn").addEventListener("click", function () {
+  const yesOption = document.getElementById("yes");
+  const noOption = document.getElementById("no");
+
+  if (!yesOption.checked && !noOption.checked) {
+    alert("দয়া করে আপনার সম্মতি নির্বাচন করুন (হ্যাঁ/না)।");
+    return;
+  }
+
+  if (yesOption.checked) {
+    alert(
+      "আপনার সম্মতি জ্ঞাপনের জন্য ধন্যবাদ! জুলাই জাতীয় সনদ বাস্তবায়নের জন্য আপনার সমর্থন রেকর্ড করা হয়েছে।",
+    );
+  } else {
+    alert(
+      "জুলাই জাতীয় সনদ প্রস্তাবসমূহের প্রতি আপনার সম্মতি জ্ঞাপন না করার সিদ্ধান্ত রেকর্ড করা হয়েছে।",
+    );
+  }
+
+  // Reset form after submission
+  yesOption.checked = false;
+  noOption.checked = false;
+});
+
+// Add visual feedback on option selection
+const options = document.querySelectorAll(".option");
+options.forEach((option) => {
+  option.addEventListener("click", function () {
+    const radio = this.querySelector('input[type="radio"]');
+    radio.checked = true;
+
+    // Remove visual selection from all options
+    options.forEach((opt) => {
+      opt.style.backgroundColor = "transparent";
+    });
+
+    // Add visual selection to clicked option
+    this.style.backgroundColor = "rgba(52, 152, 219, 0.1)";
+    this.style.borderRadius = "5px";
+    this.style.padding = "5px";
+  });
+});
+
 // Initialize the page
 document.addEventListener("DOMContentLoaded", () => {
   // Set initial theme based on time
