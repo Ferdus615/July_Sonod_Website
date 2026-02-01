@@ -721,6 +721,22 @@ footer {
     flex-direction: row;
     justify-content: center;
   }
+
+  .yes {
+    flex-direction: column;
+  }
+
+  .explanation-yes {
+    margin-top: 30px;
+  }
+
+  .no {
+    flex-direction: column;
+  }
+
+  .explanation-no {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -796,6 +812,22 @@ footer {
   .mobile-menu-btn {
     display: block;
   }
+
+  .yes {
+    flex-direction: column;
+  }
+
+  .explanation-yes {
+    margin-top: 30px;
+  }
+
+  .no {
+    flex-direction: column;
+  }
+
+  .explanation-no {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -822,5 +854,21 @@ footer {
 
   .explanation-cards {
     flex-direction: column;
+  }
+
+  .yes {
+    flex-direction: column;
+  }
+
+  .explanation-yes {
+    margin-top: 30px;
+  }
+
+  .no {
+    flex-direction: column;
+  }
+
+  .explanation-no {
+    margin-top: 30px;
   }
 }
